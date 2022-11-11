@@ -80,5 +80,138 @@
 // }
 // let search = 'age'
 // console.log(search in person);
+// let numb1 = 12;
+// if(numb1 > 13) {
+//     document.write("Great than 13");
+// }else {
+//     document.write("less than 15")
+// }
+// function isNumber(onlyNumber) {
+//     if(Number.isFinite(onlyNumber)) {
+//         document.write(`${onlyNumber} is a number`);
+//     }else {
+//         document.write(`${onlyNumber} is not a number`);
+//     }
+// }
+// //Calling a function
+// let myNumber = "23";
+// isNumber(myNumber);
 
+// function isNumber(onlyNumber, notNumber) {
+//     if((Number.isFinite(onlyNumber)) &&
+//     (Number.isFinite(notNumber))) {
+//         document.write(`${onlyNumber + notNumber} is a number`)
+//     }else {
+//         document.write(`${onlyNumber +notNumber} is not number`);
+//     }
+// }
+// let numb1 = parseInt(prompt("Enter Number"))
+// let numb2 = parseInt(prompt("Enter number"))
 
+// isNumber(numb1,numb2)
+
+// function addition(numb1, numb2) {
+//     if((Number.isFinite(numb1)) &&
+//     (Number.isFinite(numb2)) ) return numb1 + numb2;
+//     return `${numb1} / ${numb2} is not a number`;
+// }
+// console.log(addition(8, 7)); 
+
+// if((age > 17) && (salary >= 5000)) {
+//     document.write("You are qualified");
+// }else {
+//     document.write("You are not qualified");
+// }
+
+//Switch statement
+// let marks = 49;
+// switch(marks) {
+//     case 100:
+//     case 95:
+//         document.write("Grade A");
+//     break;
+//     case 91:
+//     case 90:
+//     case 87:
+//         document.write("Grade B");
+//     break;
+//     case 50:
+//         document.write("Passed");
+//     break;
+//     case 49:
+//         document.write("Failed");
+//     break;
+//     default:
+//         document.write("Not found");
+// }
+
+// let marks = 74;
+// switch(true) {
+//     case (marks < 49):
+//         document.write("failed");
+//         break;
+
+//     case (marks >= 50) && (marks <= 69):
+//         document.write("Passed");
+//         break;
+
+//     case (marks >= 70) && (marks <= 90):
+//         document.write("Distinction");
+//         break;
+
+//     case (marks >= 50) && (marks <= 69):
+//         document.write("You're awesome");
+//         break;       
+// }
+
+/*
+Different loop in JS:
+- for
+- for in: Loop through object's properties
+- for of: Loop through the values 
+- while
+- do while
+*/
+// for(let i = 0; i<10; i+=1) {
+//     console.log(i);
+//     // if(i == 5) break;
+//     //if(i == 4)continue;
+// }
+
+//for in
+// let person = {
+//     name: 'David',
+//     subject: ['HTML5', 'CSS3'],
+//     surname: 'John',
+//     address: {
+//         streetName: 'pretoria rd',
+//         country: 'South Africa',
+//         complexName: 'PTA',
+//     }
+// }
+// console.log(
+//     `
+//     Name: ${person.name}
+//     Surname: ${person.surname}
+//     Street name: ${person.address.streetName}
+//     `
+// );
+
+//console.log(person['name']);
+// for(let data in person) {
+//     if(data != 'address')
+//     console.log(`${data}: ${person[data]}`);
+// }
+// console.log(person.address)
+
+//for of
+//let numbers = [9,7,4, 34, 8]
+// for(let number of numbers) {
+//     console.log(number);
+// }
+
+// for(let i =0; i<numbers.length; i++) {
+//     console.log(numbers[i]);
+// }
+
+//while
