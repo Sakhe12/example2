@@ -213,5 +213,22 @@ Different loop in JS:
 // for(let i =0; i<numbers.length; i++) {
 //     console.log(numbers[i]);
 // }
+// function evenData(data) {
+//     for(let i in data) {
+//         if(i%2 ==0)
+//         console.log(data[i]);
+//     }
+// }
+// let data = [8, 9, 4, 12, 'Joel'];
+// evenData(data);
 
-//while
+//Factory function
+function userDetails(firstName, surname) {
+    return {
+        firstName: firstName,
+        surname: surname,
+        display: function () {
+            console.log(`Name: ${firstName}\nSurname: ${surname}`);
+          }
+    }
+}
