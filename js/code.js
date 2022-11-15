@@ -223,12 +223,21 @@ Different loop in JS:
 // evenData(data);
 
 //Factory function
-function userDetails(firstName, surname) {
-    return {
-        firstName: firstName,
-        surname: surname,
-        display: function () {
-            console.log(`Name: ${firstName}\nSurname: ${surname}`);
-          }
-    }
+// function userDetails(firstName, surname) {
+//     return {
+//         firstName: firstName,
+//         surname: surname,
+//         display: function () {
+//             console.log(`Name: ${firstName}\nSurname: ${surname}`);
+//           }
+//     }
+// } 
+
+//Example 1
+function Details(firstName, surname, email) {
+    this.firstName = firstName;
+    this.surname = surname;
+    this.email = email;
 }
+let person1 = new Details('Joel', 'Mukanya', 'joel@gmail.com');
+console.table(person1);
