@@ -234,10 +234,34 @@ Different loop in JS:
 // } 
 
 //Example 1
-function Details(firstName, surname, email) {
-    this.firstName = firstName;
-    this.surname = surname;
-    this.email = email;
-}
-let person1 = new Details('Joel', 'Mukanya', 'joel@gmail.com');
-console.table(person1);
+// function Details(firstName, surname, email) {
+//     this.firstName = firstName;
+//     this.surname = surname;
+//     this.email = email;
+// }
+// let person1 = new Details('Joel', 'Mukanya', 'joel@gmail.com');
+// console.table(person1);
+
+//Create 2 constructor functions
+// function Player1(name, surname) {
+//     this.name = name;
+//     this.surname = surname;
+// }
+
+// let messi = new Player1('Lionel', 'Messi');
+// let ronaldo = new Player2('Christiano', 'Ronaldo');
+
+// function testing(goat) {
+//     if(goat.constructor === Player1) {
+//         document.getElementById("goat").innerHTML = ("you are the true Goat🐐");
+//     }
+//     else {
+//         document.getElementById("goat").innerHTML = ("You are a fraud💰👀");
+//     }
+// }
+
+// testing(messi);
+
+Functions are objects
+==========================
+Please keep in mind that everything is Javascript
